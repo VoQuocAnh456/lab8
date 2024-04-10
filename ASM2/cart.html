@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .navbar-toggler{
+            background-color: #f8f9fa;
+        }
+        .footer {
+            background-color: #f8f9fa;
+            padding: 30px 0;
+        }
+        .footer .info {
+            margin-bottom: 20px;
+        }
+        .footer2 {
+            padding: 10px 0;
+        }
+        .icon-new {
+            display: flex;
+            justify-content: center;
+        }
+        .icon {
+            margin: 0 5px;
+        }
+        .icon i {
+            font-size: 20px;
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <header>
+          <ul class="nav justify-content-end bg-black">
+            <li class="nav-item">
+              <a class="nav-link text-white p-2" href="#">
+                <h6>MY ACCOUNT</h6>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white p-2" href="#">
+                <h6>SIGN IN</h6>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white p-2" href="#">
+                <h6>ACCOUNT</h6>
+              </a>
+            </li>
+          </ul>
+        </header>
+        <nav class="navbar navbar-expand-sm bg-black fixed-top">
+          <div class="container-fluid">
+            <a class="navbar-brand  text-white"><strong><img src="IMG/WoucAnh.png" alt="" width="200px"></strong></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynavbar">
+              <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                  <a class="nav-link text-white"><strong>HOME</strong></a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-white" href="#" role="button"
+                    data-bs-toggle="dropdown"><strong>NEW PRODUCTS</strong></a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">NEW PRODUCTS</a></li>
+                    <li><a class="dropdown-item" href="#">Another link</a></li>
+                    <li><a class="dropdown-item" href="#">A third link</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-white" href="#" role="button"
+                    data-bs-toggle="dropdown"><strong>SHOP</strong></a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">SHOP</a></li>
+                    <li><a class="dropdown-item" href="#">Another link</a></li>
+                    <li><a class="dropdown-item" href="#">A third link</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-white" href="#" role="button"
+                    data-bs-toggle="dropdown"><strong>PAGES</strong></a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">PAGEs</a></li>
+                    <li><a class="dropdown-item" href="#">Another link</a></li>
+                    <li><a class="dropdown-item" href="#">A third link</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white"><strong>ALL PAGE LINK</strong></a>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <ul class="navbar-nav me-auto">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" role="button"
+                      data-bs-toggle="dropdown"><strong>PAGE</strong></a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">PAGE</a></li>
+                      <li><a class="dropdown-item" href="#">Another link</a></li>
+                      <li><a class="dropdown-item" href="#">A third link</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <button class="btn btn-primary" type="button">Search</button>
+              </form>
+            </div>
+          </div>
+        </nav>     
+        <div class="container">
+            <h2 class="mt-5 mb-4">Giỏ hàng của bạn</h2>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Hình ảnh</th>
+                        <th scope="col">Sản phẩm</th>
+                        <th scope="col">Giá</th>
+                        <th scope="col">Số lượng</th>
+                        <th scope="col">Thành tiền</th>
+                        <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td><img src="img/MT_f3d5bc44-17c5-49c7-9312-fc895336d3f8_533x.webp" alt="Hình ảnh sản phẩm" width="100"></td>
+                        <td>Áo thun nam</td>
+                        <td>$20.00</td>
+                        <td>2</td>
+                        <td>$40.00</td>
+                        <td><button type="button" class="btn btn-danger">Xóa</button></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td><img src="img/MT_b82dc813-ad51-45c4-abc6-bc04bd3c69da_533x.webp" alt="Hình ảnh sản phẩm" width="100"></td>
+                        <td>Áo thun nam</td>
+                        <td>$20.00</td>
+                        <td>2</td>
+                        <td>$40.00</td>
+                        <td><button type="button" class="btn btn-danger">Xóa</button></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td><img src="img/MT_018dc3ea-d3d6-4b9f-9d78-99b085b93f38_533x.webp" alt="Hình ảnh sản phẩm" width="100"></td>
+                        <td>Áo thun nam</td>
+                        <td>$20.00</td>
+                        <td>2</td>
+                        <td>$40.00</td>
+                        <td><button type="button" class="btn btn-danger">Xóa</button></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td><img src="img/MT_2e5bf65b-175a-4a52-a7a2-7f8d0222bf93_533x.webp" alt="Hình ảnh sản phẩm" width="100"></td>
+                        <td>Áo thun nam</td>
+                        <td>$20.00</td>
+                        <td>2</td>
+                        <td>$40.00</td>
+                        <td><button type="button" class="btn btn-danger">Xóa</button></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5</th>
+                        <td><img src="img/MT_1abbb130-fb03-4a56-b5bb-9c786fc9d77f_533x.webp" alt="Hình ảnh sản phẩm" width="100"></td>
+                        <td>Áo thun nam</td>
+                        <td>$20.00</td>
+                        <td>2</td>
+                        <td>$40.00</td>
+                        <td><button type="button" class="btn btn-danger">Xóa</button></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="text-end">
+                <button type="button" class="btn btn-primary">Thanh toán</button>
+            </div>
+        </div>
+            <div class="footer mt-5">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6 col-12">
+                        <div class="info">
+                            <h6>SUPPORT</h6>
+                            <hr />
+                            <p>Lorem ipsum dolor sit, amet consectetur</p>
+                            <i class="fa-solid fa-phone">+1-202-555-0151</i><br />
+                            <i class="fa fa-envelope-o" aria-hidden="true">help@yourweb.com</i>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-sm-6 col-12">
+                        <div class="info">
+                            <h6>SHOP</h6>
+                            <hr />
+                            <p>Men's</p>
+                            <p>Women's</p>
+                            <p>Kid's</p>
+                            <p>Shoes</p>
+                            <p>Gift Cards</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-sm-6 col-12">
+                        <div class="info">
+                            <h6>INFORMATION</h6>
+                            <hr />
+                            <p>Questions?</p>
+                            <p>Order Status</p>
+                            <p>Sizing Charts</p>
+                            <p>Return Policy</p>
+                            <p>Gift Cards</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-sm-6 col-12">
+                        <div class="info">
+                            <h6>MY ACCOUNT</h6>
+                            <hr />
+                            <p>My account</p>
+                            <p>My Address</p>
+                            <p>Wish List</p>
+                            <p>Order list</p>
+                            <p>Oder Status</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-12">
+                        <div class="info">
+                            <h6>STAY IN TOUCH</h6>
+                            <hr />
+                            <form>
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                    <div id="emailHelp" class="form-text"></div>
+                                </div>
+                                <button type="submit" class="btn btn-primary">SUBSCRIBE </button>
+                            </form>
+                            <div class="icon-new">
+                                <div class="icon col-2">
+                                    <i class="fa-brands fa-facebook" aria-hidden="true"></i>
+                                </div>
+                                <div class="icon col-2">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </div>
+                                <div class="icon col-2">
+                                    <i class="fa-brands fa-google-plus"></i>
+                                </div>
+                                <div class="icon col-2">
+                                    <i class="fa-brands fa-square-instagram"></i>              
+                                </div>
+                                <div class="icon col-2">
+                                    <i class="fa-brands fa-youtube"></i>              
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer2">
+                <hr>
+                <p> &copy; 2024. All right reserved. </p>
+            </div>
+    </div>
+</body>
+</html>
